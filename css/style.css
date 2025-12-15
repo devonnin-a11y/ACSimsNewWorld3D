@@ -1,0 +1,38 @@
+
+html,body{margin:0;padding:0;overflow:hidden;background:#f6f3ea;font-family:system-ui}
+canvas{display:block}
+
+#ui-top{
+ position:fixed;top:10px;left:50%;transform:translateX(-50%);
+ background:#fff;padding:10px 14px;border-radius:20px;
+ display:flex;justify-content:space-between;gap:20px;
+ box-shadow:0 8px 20px rgba(0,0,0,.2);z-index:10
+}
+#ui-bottom{
+ position:fixed;bottom:10px;left:50%;transform:translateX(-50%);
+ display:flex;gap:20px;align-items:center;z-index:10
+}
+#dpad button{
+ width:48px;height:48px;font-size:20px;border-radius:14px;border:none;
+ box-shadow:0 6px 14px rgba(0,0,0,.2)
+}
+
+.panel{
+ position:fixed;right:10px;top:70px;background:#fff;padding:14px;
+ border-radius:18px;box-shadow:0 10px 24px rgba(0,0,0,.25);
+ display:none;min-width:180px;z-index:20
+}
+
+.sheet{
+ position:fixed;inset:0;background:rgba(0,0,0,.25);
+ display:none;align-items:flex-end;justify-content:center;z-index:30
+}
+.sheet-card{
+ background:#fff;width:100%;max-width:420px;border-radius:24px 24px 0 0;
+ padding:16px;box-shadow:0 -8px 20px rgba(0,0,0,.25)
+}
+.sheet .grid{
+ display:grid;grid-template-columns:repeat(2,1fr);gap:10px
+}
+.sheet button{padding:12px;border-radius:16px;border:none;font-size:14px}
+.sheet .close{margin-top:12px;width:100%}

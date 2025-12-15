@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>IslandSim 3D v2 — AC x Sims x New World</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="ui-top">
+  <span id="area">🌿 Meadow</span>
+  <div class="top-actions">
+    <button onclick="refocusCamera()">🎯</button>
+    <button onclick="togglePhone()">📱</button>
+  </div>
+</div>
+
+<div id="ui-bottom">
+  <div id="needs"></div>
+  <div id="dpad">
+    <button onclick="move('up')">⬆</button>
+    <div>
+      <button onclick="move('left')">⬅</button>
+      <button onclick="move('down')">⬇</button>
+      <button onclick="move('right')">➡</button>
+    </div>
+  </div>
+</div>
+
+<!-- Phone -->
+<div id="phone" class="sheet">
+  <div class="sheet-card">
+    <h3>📱 NookPhone</h3>
+    <div class="grid">
+      <button onclick="toggleInventory()">🎒 Inventory</button>
+      <button onclick="toggleCrafting()">🛠 Craft</button>
+      <button onclick="toggleHouse()">🏠 Enter House</button>
+    </div>
+    <button class="close" onclick="togglePhone()">Close</button>
+  </div>
+</div>
+
+<!-- Inventory -->
+<div id="inventory" class="panel"></div>
+
+<!-- Crafting -->
+<div id="crafting" class="panel"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.159.0/build/three.min.js"></script>
+<script src="js/state.js"></script>
+<script src="js/three-world.js"></script>
+<script src="js/resources.js"></script>
+<script src="js/inventory.js"></script>
+<script src="js/crafting.js"></script>
+<script src="js/interiors.js"></script>
+<script src="js/input.js"></script>
+<script src="js/game.js"></script>
+</body>
+</html>
